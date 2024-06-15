@@ -155,31 +155,31 @@
             </div>
             <div class="row animate-box fadeInUp animated">
                 <div class="col-md-10 col-md-offset-1">
-                    <form class="form-inline" id="rsv">
+                    <form class="form-inline" id="rsv" onsubmit="return submitForm()">
                         <div class="col-md-6 col-sm-4">
                             <div class="form-group">
                                 <label for="nombre" class="sr-only">Nombre(s)</label>
-                                <input type="nombre" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                                <input required type="nombre" class="form-control" id="nombre" name="Nombre" placeholder="Nombre">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-4">
                             <div class="form-group">
                                 <label for="personas" class="sr-only"># de Personas</label>
-                                <input type="numero" class="form-control" id="personas" name="personas" placeholder="# de Personas">
+                                <input required min="0" type="number" class="form-control" id="personas" name="# de Personas" placeholder="# de Personas">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-4">
                             <div class="form-group">
                                 <label for="telefono" class="sr-only">Teléfono</label>
-                                <input type="telefono" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+                                <input required type="tel" minlength="10" maxlength="10" class="form-control" id="telefono" name="Telefono" placeholder="Teléfono">
                             </div>
                         </div>
             
                         <div class="col-md-6 col-sm-10">
                             <div class="form-group">
                                 <label for="asistencia" class="sr-only">Confirmación de asistencia</label><br>
-                                <input type="radio" name="asistencia" value="asistire" id="asistire"> <font size=4.5> Asistiré</font>
-                                <input type="radio" name="asistencia" value="no-asistire" id="noasistire"> <font size=4.5>No Asistiré</font>
+                                <input type="radio" name="Asistencia" value="Asistire" id="asistire"> <font size=4.5> Asistiré</font>
+                                <input type="radio" name="Asistencia" value="No asistire" id="noasistire"> <font size=4.5>No Asistiré</font>
                             </div>
                         </div>
 
@@ -196,22 +196,6 @@
             </div>
         </div>
     </div>
-
-
-
-    <footer id="footer" role="contentinfo">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <ul class="social social-circle">
-                        <li><a href="https://www.facebook.com/Sugarme.mty/"><i class="icon-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/sugarme.mty/"><i class="icon-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
     <script src="main.js" async></script>
