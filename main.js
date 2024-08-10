@@ -10,7 +10,11 @@ function showRemaining() {
    var distance = end - now;
    if (distance < 0) {
       clearInterval(timer);
-      document.getElementById('countdown').innerHTML = 'EXPIRED!';
+      var days = 0  
+      var hours = 0
+      var minutes = 0
+      var seconds = 0
+      document.getElementById('countdown').innerHTML = '<div class="box">'+days + '<div class="text">DIAS</div></div><div class="box">' + hours + '<div class="text">HORAS</div></div><div class="box">' + minutes + '<div class="text">MIN</div></div><div class="box">' + seconds+'<div class="text">SEG</div></div>';
       return;
    }
 var days = Math.floor(distance / _day);
